@@ -1,5 +1,5 @@
 // Full-catalogue browse: search + category/type filters + pagination over CATALOG (catalog.js).
-// Every card links to that title's own static detail page: movie/<slug>.html
+// Every card links to that title's own static detail page: movie/<slug>
 const PER = 48;
 let filtered = CATALOG, page = 1, activeFilter = 'All';
 
@@ -7,7 +7,7 @@ function hue(t){let h=0;for(let i=0;i<t.length;i++)h=(h*31+t.charCodeAt(i))%360;
 function initials(t){return t.split(/[^A-Za-z0-9]+/).filter(Boolean).map(w=>w[0]).join('').slice(0,3).toUpperCase()||'F'}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function themeFor(c,ty){if(ty==='Web Series')return 'series';return {'Bollywood':'bollywood','South Indian':'south','Hollywood':'hollywood','Punjabi':'punjabi','Animation':'animation'}[c]||'cinema'}
-function card(e){const art=e.p?`<img class="posterimg" src="${e.p}" alt="${esc(e.t)} poster" loading="lazy">`:`<div class="poster themed th-${themeFor(e.c,e.ty)}"><span class="pwater">${initials(e.t)}</span><span class="ptitle">${esc(e.t)}</span><span class="pmeta">${esc(e.c)}</span><span class="pyear">${e.y||esc(e.ty)}</span></div>`;return `<article class="card"><a href="movie/${e.s}.html">${art}<div class="info"><h3>${esc(e.t)} (${e.y||'—'})</h3><p class="meta">${esc(e.c)} • ${esc(e.ty)} • ${esc(e.l.join(', '))}</p><p><span class="badge">${esc(e.q)}</span><span class="badge">${e.y||''}</span></p></div></a></article>`}
+function card(e){const art=e.p?`<img class="posterimg" src="${e.p}" alt="${esc(e.t)} poster" loading="lazy">`:`<div class="poster themed th-${themeFor(e.c,e.ty)}"><span class="pwater">${initials(e.t)}</span><span class="ptitle">${esc(e.t)}</span><span class="pmeta">${esc(e.c)}</span><span class="pyear">${e.y||esc(e.ty)}</span></div>`;return `<article class="card"><a href="movie/${e.s}">${art}<div class="info"><h3>${esc(e.t)} (${e.y||'—'})</h3><p class="meta">${esc(e.c)} • ${esc(e.ty)} • ${esc(e.l.join(', '))}</p><p><span class="badge">${esc(e.q)}</span><span class="badge">${e.y||''}</span></p></div></a></article>`}
 
 function apply(){
   const q=(document.getElementById('catalogSearch').value||'').toLowerCase().trim();
