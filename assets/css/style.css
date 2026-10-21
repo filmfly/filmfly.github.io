@@ -29,3 +29,26 @@ footer{margin-top:50px;border-top:1px solid var(--line);background:var(--bg2)}fo
 .filters{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.filters button{background:var(--bg2);color:#fff;border:1px solid var(--line);padding:9px 15px;border-radius:999px;cursor:pointer}.filters button.on{background:var(--gold);color:#111}
 @media(max-width:800px){.detail{grid-template-columns:1fr}.hero h1{font-size:30px}.nav nav{display:none}.searchbox input{width:150px}footer .cols{grid-template-columns:1fr 1fr}}
 .est{margin:6px 0 4px}.est select{background:var(--bg2);color:#fff;border:1px solid var(--line);padding:11px 14px;border-radius:999px;margin:0 8px 10px 0}.estbar{background:var(--bg2);border:1px solid var(--line);border-radius:999px;height:18px;overflow:hidden;margin:12px 0}#estFill{height:100%;width:0;background:var(--grad)}
+.posterimg{width:100%;height:240px;object-fit:cover;display:block;background:var(--bg2)}
+.detail .posterimg{height:400px;border-radius:18px}
+
+/* Themed poster art — designed fallback for titles without a TMDB poster.
+   Every card/detail page gets a category-themed poster: layered gradients,
+   light rays, watermark initials, poster typography, category chip + year. */
+.poster.themed{position:relative;overflow:hidden;flex-direction:column;gap:9px;padding:18px 14px;background:radial-gradient(ellipse 105% 60% at 50% -10%,rgba(255,255,255,.38),transparent 60%),repeating-linear-gradient(115deg,rgba(255,255,255,.055) 0 9px,transparent 9px 21px),linear-gradient(160deg,var(--p1),var(--p2))}
+.poster.themed::after{content:"";position:absolute;inset:0;background:radial-gradient(118% 118% at 50% 38%,transparent 52%,rgba(0,0,0,.52));pointer-events:none}
+.poster .pwater{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:168px;font-weight:900;letter-spacing:-8px;color:rgba(255,255,255,.13);pointer-events:none}
+.poster .ptitle{position:relative;z-index:1;font-size:21px;font-weight:900;line-height:1.18;text-transform:uppercase;letter-spacing:.6px;text-shadow:0 2px 12px rgba(0,0,0,.5);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.poster .pmeta{position:relative;z-index:1;font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--acc);background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.22);padding:4px 11px;border-radius:999px}
+.poster .pyear{position:relative;z-index:1;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.88);letter-spacing:3px}
+.detail .poster .ptitle{font-size:32px}
+.detail .poster .pwater{font-size:290px}
+.th-bollywood{--p1:#e84393;--p2:#43092e;--acc:#ffd43b}
+.th-south{--p1:#ff7a18;--p2:#6e1502;--acc:#ffe08a}
+.th-hollywood{--p1:#2e6bff;--p2:#070f2e;--acc:#a9c6ff}
+.th-punjabi{--p1:#37b24d;--p2:#0b3520;--acc:#ffe066}
+.th-animation{--p1:#9775fa;--p2:#2a1660;--acc:#e5dbff}
+.th-series{--p1:#12b5a5;--p2:#04303e;--acc:#99e9f2}
+.th-horror{--p1:#495057;--p2:#050508;--acc:#ff6b6b}
+.th-comedy{--p1:#fab005;--p2:#6e4400;--acc:#fff3bf}
+.th-cinema{--p1:#e03131;--p2:#330505;--acc:#ffc9c9}

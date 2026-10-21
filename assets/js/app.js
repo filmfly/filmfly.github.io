@@ -1,5 +1,6 @@
 
-function poster(m){return `<div class="poster" style="background:linear-gradient(150deg,hsl(${m.hue} 75% 38%),hsl(${(m.hue+70)%360} 80% 22%))">${m.title.split(' ').map(w=>w[0]).join('').slice(0,3)}<br><small style="font-size:15px">${m.title}</small></div>`}
+function themeForG(g){return {'Animation':'animation','Horror':'horror','Romance':'bollywood','Sci-Fi':'hollywood','Thriller':'hollywood','Action':'south','Comedy':'comedy','Drama':'cinema'}[g]||'cinema'}
+function poster(m){if(m.poster)return `<img class="posterimg" src="${m.poster}" alt="${m.title} poster" loading="lazy">`;const ini=m.title.split(/[^A-Za-z0-9]+/).filter(Boolean).map(w=>w[0]).join('').slice(0,3).toUpperCase()||'F';return `<div class="poster themed th-${themeForG(m.genre)}"><span class="pwater">${ini}</span><span class="ptitle">${m.title}</span><span class="pmeta">${m.genre}</span><span class="pyear">${m.year}</span></div>`}
 function card(m){return `<article class="card"><a href="movie/${m.slug}.html">${poster(m)}<div class="info"><h3>${m.title} (${m.year})</h3><p class="meta">⭐ ${m.rating} • ${m.genre} • ${m.language}</p><p><span class="badge">480p</span><span class="badge">720p</span><span class="badge">1080p</span></p></div></a></article>`}
 function render(id,list){const el=document.getElementById(id);if(el)el.innerHTML=list.map(card).join('')}
 document.addEventListener('DOMContentLoaded',()=>{

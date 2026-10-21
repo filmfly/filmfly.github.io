@@ -14,7 +14,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "jawan-2023"
+  "slug": "jawan-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/jFt1gS4BGHlK8xt76Y81Alp4dbt.jpg"
  },
  {
   "id": 2,
@@ -31,7 +32,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "pathaan-2023"
+  "slug": "pathaan-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/arf00BkwvXo0CFKbaD9OpqdE4Nu.jpg"
  },
  {
   "id": 3,
@@ -48,7 +50,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "animal-2023"
+  "slug": "animal-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/hr9rjR3J0xBBKmlJ4n3gHId9ccx.jpg"
  },
  {
   "id": 4,
@@ -65,7 +68,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "12th-fail-2023"
+  "slug": "12th-fail-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/eebUPRI4Z5e1Z7Hev4JZAwMIFkX.jpg"
  },
  {
   "id": 5,
@@ -82,7 +86,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "dunki-2023"
+  "slug": "dunki-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/kPRb1mbVHGop0egQ7153y0lhzGL.jpg"
  },
  {
   "id": 6,
@@ -99,7 +104,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "leo-2023"
+  "slug": "leo-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/gSOVog7ydsaF1YpgAqBqnKYFGY.jpg"
  },
  {
   "id": 7,
@@ -116,7 +122,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "jailer-2023"
+  "slug": "jailer-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/pTmMxAHqX4vsIDE6HPPxOR0Q6TN.jpg"
  },
  {
   "id": 8,
@@ -150,7 +157,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "hi-nanna-2023"
+  "slug": "hi-nanna-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/hhMLtq9m1aK0dpY9Wcq26XeDH2z.jpg"
  },
  {
   "id": 10,
@@ -167,7 +175,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "avengers-endgame-2019"
+  "slug": "avengers-endgame-2019",
+  "poster": "https://image.tmdb.org/t/p/w500/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg"
  },
  {
   "id": 11,
@@ -184,7 +193,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "john-wick-chapter-4-2023"
+  "slug": "john-wick-chapter-4-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
  },
  {
   "id": 12,
@@ -201,7 +211,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "oppenheimer-2023"
+  "slug": "oppenheimer-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
  },
  {
   "id": 13,
@@ -218,7 +229,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "barbie-2023"
+  "slug": "barbie-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
  },
  {
   "id": 14,
@@ -235,7 +247,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "spider-man-across-the-spider-verse-2023"
+  "slug": "spider-man-across-the-spider-verse-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg"
  },
  {
   "id": 15,
@@ -252,7 +265,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "the-super-mario-bros-movie-2023"
+  "slug": "the-super-mario-bros-movie-2023",
+  "poster": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
  },
  {
   "id": 16,
@@ -269,7 +283,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "guntur-kaaram-2024"
+  "slug": "guntur-kaaram-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/qvBt4YLy274ZmoMAfVlwmHkjVkq.jpg"
  },
  {
   "id": 17,
@@ -286,7 +301,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "fighter-2024"
+  "slug": "fighter-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/zqFuriKJ6pYDvf72kXNLONnuE8k.jpg"
  },
  {
   "id": 18,
@@ -303,7 +319,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "article-370-2024"
+  "slug": "article-370-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/9VTemjHMpyxzfC3JsG2aFy8Bf9Y.jpg"
  },
  {
   "id": 19,
@@ -320,7 +337,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "shaitaan-2024"
+  "slug": "shaitaan-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/oRvFzcagAcC6Q317xtV7QXzwBnj.jpg"
  },
  {
   "id": 20,
@@ -337,7 +355,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "crew-2024"
+  "slug": "crew-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/8mnCtQngfhYt0W0BmkrCePutmvy.jpg"
  },
  {
   "id": 21,
@@ -354,7 +373,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "deadpool-wolverine-2024"
+  "slug": "deadpool-wolverine-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
  },
  {
   "id": 22,
@@ -371,7 +391,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "inside-out-2-2024"
+  "slug": "inside-out-2-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
  },
  {
   "id": 23,
@@ -388,7 +409,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "kung-fu-panda-4-2024"
+  "slug": "kung-fu-panda-4-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg"
  },
  {
   "id": 24,
@@ -405,7 +427,8 @@ const MOVIES=[
    "720p",
    "1080p"
   ],
-  "slug": "dune-part-two-2024"
+  "slug": "dune-part-two-2024",
+  "poster": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg"
  }
 ];
 const SITE='https://filmfly.github.io/';
