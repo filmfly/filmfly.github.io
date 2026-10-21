@@ -52,3 +52,8 @@ footer{margin-top:50px;border-top:1px solid var(--line);background:var(--bg2)}fo
 .th-horror{--p1:#495057;--p2:#050508;--acc:#ff6b6b}
 .th-comedy{--p1:#fab005;--p2:#6e4400;--acc:#fff3bf}
 .th-cinema{--p1:#e03131;--p2:#330505;--acc:#ffc9c9}
+
+/* FilmFly logo */
+.logo{display:inline-flex;align-items:center;gap:10px;font-style:italic;letter-spacing:.2px}
+.logoimg{width:38px;height:38px;border-radius:10px;box-shadow:0 4px 16px rgba(229,9,20,.35);flex:none}
+@media(max-width:640px){.logoimg{width:32px;height:32px}.logo{font-size:22px}}
