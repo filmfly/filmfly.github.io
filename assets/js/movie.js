@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded',()=>{
  <p style="margin:14px 0">${m.synopsis}</p>
  <p><a class="btn gold" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${encodeURIComponent(m.title+' '+m.year+' official trailer')}">▶ Watch Trailer</a>
  <button class="btn ghost" onclick="addWatch(${m.id})">+ Add to Watchlist</button></p>
- <div class="ad">ADVERTISEMENT — YOUR AD CODE HERE</div>
  <h2 class="sec">Movie Information</h2><table><tr><th>Title</th><td>${m.title}</td></tr><tr><th>Release Year</th><td>${m.year}</td></tr><tr><th>Genre</th><td>${m.genre}</td></tr><tr><th>Language</th><td>${m.language}</td></tr><tr><th>Duration</th><td>${m.duration}</td></tr><tr><th>Rating</th><td>${m.rating}/10</td></tr></table></div>`;
  document.getElementById('formats').innerHTML=['480p|350 MB|SD','720p|850 MB|HD','1080p|1.8 GB|Full HD','4K|5.2 GB|Ultra HD'].map(f=>{const[q,s,r]=f.split('|');return `<tr><td><b>${q}</b></td><td>${r}</td><td>${s}</td><td>${m.language} Audio</td><td><button class="btn" onclick="openModal()">Check ${q}</button></td></tr>`}).join('');
  render('related',MOVIES.filter(x=>x.genre==m.genre&&x.id!=m.id).concat(MOVIES.filter(x=>x.genre!=m.genre)).slice(0,6));
